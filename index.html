@@ -1,11 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nilwella Bay Hotel &amp; Villa — beachfront rooms, restaurant and villa</title>
+<meta name="description" content="A small beachfront hotel on Sri Lanka's south coast: five room types, a sea-view restaurant and bar, a pool, and a full villa for private functions.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ==================== NAVIGATION ==================== -->
+<nav class="navbar navbar-expand-lg site-nav nav-over-hero" id="siteNav">
+  <div class="container">
+    <a class="navbar-brand brand-mark" href="index.html">
+      <span class="mark" aria-hidden="true">N</span>
+      <span class="name">Nilwella Bay<span class="place">Hotel &amp; Villa</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Open the menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+        <li class="nav-item"><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <a class="btn btn-amber btn-sm px-3 py-2" href="reservation.html">Book your stay</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ==================== HERO ==================== -->
+<header class="hero">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1: the bay at sunrise"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2: the beach at midday"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3: the villa set up for an evening function"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/hero-1.svg" alt="The bay in front of the hotel at sunrise, with a fishing boat on the water">
+        <div class="hero-veil"></div>
+        <div class="carousel-caption">
+          <div class="container">
+            <div class="hero-copy">
+              <p class="hero-kicker">Nilwella, southern coast</p>
+              <h1>Relax. Stay. Experience.</h1>
+              <p class="mb-4">Fourteen rooms on a quiet stretch of sand, a kitchen that cooks Chinese and
+                 Italian to order, and a pool that looks straight out at the Indian Ocean.</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-amber" href="reservation.html">Book your stay</a>
+                <a class="btn btn-outline-light-brand" href="rooms.html">Explore rooms</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/hero-2.svg" alt="The beach directly in front of the hotel on a clear afternoon">
+        <div class="hero-veil"></div>
+        <div class="carousel-caption">
+          <div class="container">
+            <div class="hero-copy">
+              <p class="hero-kicker">Steps from the water</p>
+              <h1>The beach starts at the gate</h1>
+              <p class="mb-4">No road to cross and no crowd to squeeze past. Walk down through the garden,
+                 past the pool, and you are on the sand.</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-amber" href="services.html">See what's included</a>
+                <a class="btn btn-outline-light-brand" href="destinations.html">Places nearby</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/hero-3.svg" alt="The villa lit with string lights, set up for an evening celebration">
+        <div class="hero-veil"></div>
+        <div class="carousel-caption">
+          <div class="container">
+            <div class="hero-copy">
+              <p class="hero-kicker">Take the whole place</p>
+              <h1>A villa for the whole party</h1>
+              <p class="mb-4">Birthdays, family reunions and small corporate days. Book every room at once
+                 and the garden, pool and kitchen come with it.</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-amber" href="rooms.html#villa">About the villa</a>
+                <a class="btn btn-outline-light-brand" href="contact.html">Ask about a function</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous slide</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next slide</span>
+    </button>
+  </div>
+</header>
+
+<!-- ==================== QUICK BOOKING STRIP ==================== -->
+<section class="container">
+  <form class="quick-book" id="quickBook" novalidate>
+    <div class="row g-3 align-items-end">
+      <div class="col-6 col-lg-3">
+        <label class="form-label" for="qCheckin">Check in</label>
+        <input type="date" class="form-control" id="qCheckin" required>
+      </div>
+      <div class="col-6 col-lg-3">
+        <label class="form-label" for="qCheckout">Check out</label>
+        <input type="date" class="form-control" id="qCheckout" required>
+      </div>
+      <div class="col-6 col-lg-2">
+        <label class="form-label" for="qRoom">Room</label>
+        <select class="form-select" id="qRoom">
+          <option value="">Any</option>
+          <option value="vip">VIP</option>
+          <option value="single">Single</option>
+          <option value="double" selected>Double</option>
+          <option value="triple">Triple</option>
+          <option value="villa">Full villa</option>
+        </select>
+      </div>
+      <div class="col-6 col-lg-2">
+        <label class="form-label" for="qGuests">Adults</label>
+        <input type="number" class="form-control" id="qGuests" value="2" min="1" max="30">
+      </div>
+      <div class="col-12 col-lg-2 d-grid">
+        <button class="btn btn-brand" type="submit">Check dates</button>
+      </div>
+    </div>
+  </form>
+</section>
+
+<!-- ==================== WELCOME ==================== -->
+<section class="section">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 reveal">
+        <hr class="horizon">
+        <h2>A small hotel, run by the family that built it</h2>
+        <p class="lead-note">Nilwella Bay opened in 2009 with four rooms and one cook. It has grown to
+           fourteen rooms and a restaurant that seats sixty, and it is still the same family
+           at the front desk in the morning.</p>
+        <p>Guests come for the quiet end of the bay. Fishing boats go out before dawn, the water
+           is calm enough to swim from March to October, and the nearest main road is far enough
+           away that you hear the sea instead of it.</p>
+        <div class="figure-row mt-4">
+          <div>
+            <div class="num">14</div>
+            <div class="cap">Rooms across five types, from a single to a full villa</div>
+          </div>
+          <div>
+            <div class="num">40m</div>
+            <div class="cap">From the front gate to the water line</div>
+          </div>
+          <div>
+            <div class="num">2009</div>
+            <div class="cap">Open every season since, apart from monsoon repairs</div>
+          </div>
+        </div>
+        <a class="btn btn-outline-brand mt-4" href="about.html">More about us</a>
+      </div>
+      <div class="col-lg-6 reveal">
+        <div class="media-frame" style="border-radius:var(--radius)">
+          <img src="images/about-1.svg" alt="View of the bay from the hotel garden, with palms framing the water">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FEATURED ROOMS ==================== -->
+<section class="section bg-sand">
+  <div class="container">
+    <div class="row align-items-end mb-5">
+      <div class="col-lg-8">
+        <hr class="horizon">
+        <h2>Where you'll sleep</h2>
+        <p class="mb-0">Every room has air conditioning, a private bathroom, Wi-Fi and a television.
+           What changes between them is the size of the bed, the view, and how many people fit.</p>
+      </div>
+      <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+        <a class="btn btn-outline-brand" href="rooms.html">All five room types</a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- VIP -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <article class="card-plain room-card h-100">
+          <div class="media-frame ratio-room">
+            <img src="images/room-vip.svg" alt="VIP room with a wide bed and a window facing the sea">
+            <span class="price-tag"><span data-price="vip"></span> <small>/ night</small></span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h3 class="h4">VIP Room</h3>
+            <p class="small mb-3">The largest of the double rooms, on the top floor corner, with the
+               widest stretch of sea from the window.</p>
+            <ul class="spec-list">
+              <li><i class="bi bi-people"></i> 2 guests</li>
+              <li><i class="bi bi-water"></i> Full sea view</li>
+              <li><i class="bi bi-cup-hot"></i> Breakfast included</li>
+            </ul>
+            <div class="mt-auto d-flex gap-2">
+              <a class="btn btn-brand btn-sm flex-fill" href="reservation.html?room=vip">Book now</a>
+              <a class="btn btn-outline-brand btn-sm flex-fill" href="rooms.html#vip">Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Double -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <article class="card-plain room-card h-100">
+          <div class="media-frame ratio-room">
+            <img src="images/room-double.svg" alt="Double room with two beds pushed together and a garden window">
+            <span class="price-tag"><span data-price="double"></span> <small>/ night</small></span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h3 class="h4">Double Room</h3>
+            <p class="small mb-3">Our most-booked room. One double bed, a small balcony, and a partial
+               view of the water over the garden.</p>
+            <ul class="spec-list">
+              <li><i class="bi bi-people"></i> 2 guests</li>
+              <li><i class="bi bi-tree"></i> Garden or partial sea view</li>
+              <li><i class="bi bi-snow"></i> Air conditioning</li>
+            </ul>
+            <div class="mt-auto d-flex gap-2">
+              <a class="btn btn-brand btn-sm flex-fill" href="reservation.html?room=double">Book now</a>
+              <a class="btn btn-outline-brand btn-sm flex-fill" href="rooms.html#double">Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Villa -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <article class="card-plain room-card h-100">
+          <div class="media-frame ratio-room">
+            <img src="images/room-villa.svg" alt="The whole villa lit up in the evening with the garden set for a party">
+            <span class="price-tag"><span data-price="villa"></span> <small>/ night</small></span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h3 class="h4">Full Villa</h3>
+            <p class="small mb-3">Every room, the garden, the pool and the kitchen, booked as one
+               property for up to twelve people.</p>
+            <ul class="spec-list">
+              <li><i class="bi bi-people"></i> Up to 12 guests</li>
+              <li><i class="bi bi-balloon"></i> Functions and celebrations</li>
+              <li><i class="bi bi-person-badge"></i> Cook and housekeeper on site</li>
+            </ul>
+            <div class="mt-auto d-flex gap-2">
+              <a class="btn btn-brand btn-sm flex-fill" href="reservation.html?room=villa">Book now</a>
+              <a class="btn btn-outline-brand btn-sm flex-fill" href="rooms.html#villa">Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FACILITIES ==================== -->
+<section class="section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <hr class="horizon center">
+      <h2>What's here</h2>
+      <p class="mx-auto">Everything below is on the property. Nothing needs a taxi.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3 reveal">
+        <div class="card-plain service-card"><div class="card-body">
+          <div class="icon-badge"><i class="bi bi-water"></i></div>
+          <h3 class="h5">Swimming pool</h3>
+          <p class="small mb-0">Open 7am to 8pm, with a shallow end for children and towels at the desk.</p>
+        </div></div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal">
+        <div class="card-plain service-card"><div class="card-body">
+          <div class="icon-badge"><i class="bi bi-sun"></i></div>
+          <h3 class="h5">Beach access</h3>
+          <p class="small mb-0">A private path through the garden onto the sand, with loungers and shade.</p>
+        </div></div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal">
+        <div class="card-plain service-card"><div class="card-body">
+          <div class="icon-badge"><i class="bi bi-egg-fried"></i></div>
+          <h3 class="h5">Restaurant</h3>
+          <p class="small mb-0">Chinese and Italian dishes plus a Sri Lankan breakfast, served 7am to 10pm.</p>
+        </div></div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal">
+        <div class="card-plain service-card"><div class="card-body">
+          <div class="icon-badge"><i class="bi bi-cup-straw"></i></div>
+          <h3 class="h5">Bar and BYOB</h3>
+          <p class="small mb-0">A stocked bar by the pool, and you may bring your own bottle for a small
+             corkage charge.</p>
+        </div></div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal">
+        <div class="card-plain service-card"><div class="card-body">
+          <div class="icon-badge"><i class="bi bi-binoculars"></i></div>
+          <h3 class="h5">Sea view</h3>
+          <p class="small mb-0">Six of the fourteen rooms look straight at the water, as does the whole
+             restaurant terrace.</p>
+        </div></div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal">
+        <div class="card-plain service-card"><div class="card-body">
+          <div class="icon-badge"><i class="bi bi-balloon"></i></div>
+          <h3 class="h5">Functions</h3>
+          <p class="small mb-0">Birthdays, gatherings and small corporate days, using the villa and garden.</p>
+        </div></div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal">
+        <div class="card-plain service-card"><div class="card-body">
+          <div class="icon-badge"><i class="bi bi-wifi"></i></div>
+          <h3 class="h5">Wi-Fi throughout</h3>
+          <p class="small mb-0">Fibre in every room, the restaurant and the garden. No charge, no voucher.</p>
+        </div></div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal">
+        <div class="card-plain service-card"><div class="card-body">
+          <div class="icon-badge"><i class="bi bi-car-front"></i></div>
+          <h3 class="h5">Airport transfer</h3>
+          <p class="small mb-0">Arranged with a driver we know, priced before you travel. Ask at booking.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <a class="btn btn-outline-brand" href="services.html">All services in detail</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== RESTAURANT ==================== -->
+<section class="section bg-ink">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 order-lg-2 reveal">
+        <hr class="horizon light">
+        <h2>Two kitchens, one terrace</h2>
+        <p>The chef trained in Colombo and cooks Chinese to order — fried rice, noodles, devilled
+           chicken, whatever came in from the boats that morning. The second half of the menu is
+           Italian: hand-stretched pizza, pasta and lasagna from the wood oven.</p>
+        <p>Breakfast is served from 7am on the terrace, and includes hoppers, string hoppers, fruit
+           and eggs cooked how you ask.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a class="btn btn-amber" href="restaurant.html">See the menu</a>
+          <a class="btn btn-outline-light-brand" href="restaurant.html#bar">The bar and BYOB</a>
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1 reveal">
+        <div class="row g-3">
+          <div class="col-7">
+            <div class="media-frame ratio-square" style="border-radius:var(--radius)">
+              <img src="images/food-seafood-rice.svg" alt="Seafood fried rice served on a white plate">
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="media-frame ratio-square" style="border-radius:var(--radius)">
+              <img src="images/food-pizza.svg" alt="A pizza fresh from the oven">
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="media-frame ratio-square" style="border-radius:var(--radius)">
+              <img src="images/food-cocktail.svg" alt="A cocktail served at the pool bar">
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="media-frame ratio-square" style="border-radius:var(--radius)">
+              <img src="images/restaurant-hall.svg" alt="The restaurant terrace in the evening">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== HOW BOOKING WORKS (a real sequence) ==================== -->
+<section class="section">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <hr class="horizon">
+        <h2>How booking works</h2>
+        <p>There is no payment on this website. You send a request, we check the book by hand, and
+           you hear back from a person.</p>
+        <a class="btn btn-brand mt-2" href="reservation.html">Start a request</a>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-4">
+          <div class="col-sm-6">
+            <div class="step"><span class="n">1</span>
+              <div><h3 class="h5">Send your dates</h3>
+                <p class="small mb-0">Fill in the reservation form with your dates, room type and
+                   number of guests.</p></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="step"><span class="n">2</span>
+              <div><h3 class="h5">We check the book</h3>
+                <p class="small mb-0">The front desk confirms the room is free for those nights,
+                   usually within a day.</p></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="step"><span class="n">3</span>
+              <div><h3 class="h5">We reply by email</h3>
+                <p class="small mb-0">You get a confirmation with the total, and how to pay the
+                   deposit if you want one.</p></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="step"><span class="n">4</span>
+              <div><h3 class="h5">Arrive after 2pm</h3>
+                <p class="small mb-0">Check-in from 2pm, check-out by 11am. Early arrivals can leave
+                   bags at the desk.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== DESTINATIONS ==================== -->
+<section class="section bg-sand">
+  <div class="container">
+    <div class="row align-items-end mb-5">
+      <div class="col-lg-8">
+        <hr class="horizon">
+        <h2>Worth the drive</h2>
+        <p class="mb-0">The front desk arranges drivers for any of these, and can pack breakfast if
+           you are leaving early.</p>
+      </div>
+      <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+        <a class="btn btn-outline-brand" href="destinations.html">All destinations</a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4 reveal">
+        <article class="card-plain dest-card h-100">
+          <div class="media-frame ratio-room"><img src="images/dest-whale.svg" alt="A boat on open water off Mirissa"></div>
+          <div class="card-body">
+            <h3 class="h5">Whale watching, Mirissa</h3>
+            <p class="small mb-0">Boats leave at 6am between November and April, looking for blue whales
+               and spinner dolphins.</p>
+            <div class="meta">
+              <span><i class="bi bi-geo-alt"></i> 28 km</span>
+              <span><i class="bi bi-clock"></i> 40 min</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4 reveal">
+        <article class="card-plain dest-card h-100">
+          <div class="media-frame ratio-room"><img src="images/dest-fort.svg" alt="Stone ramparts of Galle Fort"></div>
+          <div class="card-body">
+            <h3 class="h5">Galle Fort</h3>
+            <p class="small mb-0">A walled Dutch town from 1663, best walked in the last hour before
+               sunset when the ramparts cool down.</p>
+            <div class="meta">
+              <span><i class="bi bi-geo-alt"></i> 45 km</span>
+              <span><i class="bi bi-clock"></i> 1 hr</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4 reveal">
+        <article class="card-plain dest-card h-100">
+          <div class="media-frame ratio-room"><img src="images/dest-forest.svg" alt="Dense green canopy of a rainforest reserve"></div>
+          <div class="card-body">
+            <h3 class="h5">Sinharaja rainforest</h3>
+            <p class="small mb-0">A full-day trip into the last stretch of primary rainforest on the
+               island. Guides are compulsory and worth it.</p>
+            <div class="meta">
+              <span><i class="bi bi-geo-alt"></i> 78 km</span>
+              <span><i class="bi bi-clock"></i> 2 hr</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== REVIEWS ==================== -->
+<section class="section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <hr class="horizon center">
+      <h2>What guests said</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal">
+        <div class="quote-card">
+          <div class="stars mb-2" aria-label="Rated 5 out of 5">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <blockquote class="mb-3">We asked for the crab curry the night before and it was waiting when
+            we came back from the beach. Small place, real cooking.</blockquote>
+          <p class="small mb-0 text-ink"><strong>Dilini &amp; Ruwan</strong> · Kandy · March 2026</p>
+        </div>
+      </div>
+      <div class="col-md-4 reveal">
+        <div class="quote-card">
+          <div class="stars mb-2" aria-label="Rated 5 out of 5">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <blockquote class="mb-3">Took the whole villa for my mother's seventieth. Fifteen of us, one
+            long table in the garden, nobody had to drive home.</blockquote>
+          <p class="small mb-0 text-ink"><strong>Nadeesha P.</strong> · Colombo · January 2026</p>
+        </div>
+      </div>
+      <div class="col-md-4 reveal">
+        <div class="quote-card">
+          <div class="stars mb-2" aria-label="Rated 4 out of 5">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+          </div>
+          <blockquote class="mb-3">The sea view rooms are worth the difference. Ours was on the corner and
+            we ate breakfast on the balcony every morning.</blockquote>
+          <p class="small mb-0 text-ink"><strong>Thomas B.</strong> · Rotterdam · December 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA ==================== -->
+<section class="section-tight bg-ink">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <h2 class="mb-2">Rooms go first at full moon and over Avurudu</h2>
+        <p class="mb-0">If your dates are fixed, send the request early. We hold a room for 48 hours
+           while you decide.</p>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <a class="btn btn-amber" href="reservation.html">Check your dates</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="container section-tight">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="brand-mark mb-3 d-inline-flex" href="index.html">
+          <span class="mark" aria-hidden="true">N</span>
+          <span class="name">Nilwella Bay<span class="place">Hotel &amp; Villa</span></span>
+        </a>
+        <p class="small">A fourteen-room beachfront hotel on the southern coast, with a restaurant,
+           a pool, direct beach access and a villa available for private functions.</p>
+        <div class="social-row mt-3">
+          <a href="#" aria-label="Nilwella Bay on Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Nilwella Bay on Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Nilwella Bay on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" aria-label="Nilwella Bay on Tripadvisor"><i class="bi bi-compass"></i></a>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h4>Pages</h4>
+        <ul class="link-col small">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <h4>Find us</h4>
+        <div class="contact-line small"><i class="bi bi-geo-alt"></i>
+          <span>142 Beach Road, Nilwella,<br>Matara District, Sri Lanka</span></div>
+        <div class="contact-line small"><i class="bi bi-telephone"></i>
+          <span><a href="tel:+94412345678">+94 41 234 5678</a><br>
+                <a href="tel:+94771234567">+94 77 123 4567</a></span></div>
+        <div class="contact-line small"><i class="bi bi-envelope"></i>
+          <span><a href="mailto:stay@nilwellabay.lk">stay@nilwellabay.lk</a></span></div>
+        <div class="contact-line small"><i class="bi bi-clock"></i>
+          <span>Front desk 6am – 11pm<br>Restaurant 7am – 10pm</span></div>
+      </div>
+
+      <div class="col-lg-3">
+        <h4>Seasonal offers</h4>
+        <p class="small">One email every few months when rates drop out of season. Nothing else.</p>
+        <form class="js-newsletter" novalidate>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="you@example.com" aria-label="Your email address" required>
+            <button class="btn btn-amber" type="submit">Join</button>
+          </div>
+          <p class="js-newsletter-note small mt-2 mb-0"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-base">
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+      <span>© <span class="js-year">2026</span> Nilwella Bay Hotel &amp; Villa. All rights reserved.</span>
+      <span>Student front-end project by Praveen Sanduwinna · ID 205</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
